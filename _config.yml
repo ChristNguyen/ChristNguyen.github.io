@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Truong' page"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Nguyen Duc Truong"
 description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://ChristNguyen.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -81,7 +81,7 @@ baidu_site_verification  :
 twitter:
   username               :
 facebook:
-  username               :
+  username               :truongnd127
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -102,13 +102,13 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "Nguyen Duc Truong"
+  avatar           : # https://scontent.fhan5-4.fna.fbcdn.net/v/t1.6435-9/83415063_1425687054255025_4352280722577293312_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=TTo-ET32JdYAX_caYG8&_nc_ht=scontent.fhan5-4.fna&oh=2b519d57c246701c49d16fe3d950e90a&oe=619B6F09"
+  bio              : "I am an **amazing** person.=)))"
+  location         : "Somewhere "
   email            :
   links:
-    - label: "Email"
+    - label: "truongnd127@gmmail.com"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
     - label: "Website"
