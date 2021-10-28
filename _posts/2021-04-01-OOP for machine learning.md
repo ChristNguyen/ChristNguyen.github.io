@@ -1,4 +1,12 @@
-﻿
+---
+title: "OOP for machine learning"
+excerpt: "Pipeline for Model deployment."
+categories: 
+  - Machine learning
+  - Pipe line
+  - OOP
+---
+
 #   Why need OOP for machine learning  \n Pipeline for Model deployment,
 
 
