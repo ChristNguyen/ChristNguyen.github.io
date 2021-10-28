@@ -123,3 +123,5 @@ This is the final step where we combine Transformers and Estimators (in this exa
 ![](https://miro.medium.com/max/1050/1*va14ybPOa1z3wF5ViEyLqQ.jpeg)
 
 **Flow Diagram of Sklearn Pipeline**
+
+[The notebook could found here:] (https://github.com/ChristNguyen/VNU_master/blob/main/Titanic_Model_With_Pipeline_CustomTransformer.ipynb)
