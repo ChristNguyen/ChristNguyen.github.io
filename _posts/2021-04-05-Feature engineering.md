@@ -1,4 +1,15 @@
-﻿## Feature engineering
+---
+title: "Feature engineering for machine learning"
+excerpt: ""
+categories: 
+  - Machine learning
+  - Feature engineering
+  - Hyperparameter 
+  - Feature selection
+---
+
+
+## Feature engineering
 
 > Feature engineering is not just about creating new features from data but also includes different types of normalization and transformations.
 For category data, I already approach some way inn previous post.
