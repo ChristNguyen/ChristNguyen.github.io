@@ -209,5 +209,7 @@ X_transformed = ufs.transform(X)```
  - using a Bayesian technique with Gaussian process for finding optimal parameters or by using a genetic algorithm.
 > 
 > Application of downhill simplex and Nelder-Mead in ensembling and stacking
-More detail could check [here](https://www.jeremyjordan.me/hyperparameter-tuning/)
+> 
+hyperparameter optimization is good thing to learn more.
+More detail could check [here] (https://www.jeremyjordan.me/hyperparameter-tuning/)
 ![Hyper parameter](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox/3966084/be79d3aa14c5534213930fd4395c2078/Hyperparameter%20tuning%20guide.png?generation=1609159689753686&alt=media)
