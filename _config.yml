@@ -103,9 +103,9 @@ analytics:
 # Site Author
 author:
   name             : "Nguyen Duc Truong"
-  avatar           : "https://scontent.fhan5-4.fna.fbcdn.net/v/t1.6435-9/83415063_1425687054255025_4352280722577293312_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=TTo-ET32JdYAX_caYG8&_nc_ht=scontent.fhan5-4.fna&oh=2b519d57c246701c49d16fe3d950e90a&oe=619B6F09"
-  bio              : "I'm Truong, \n
-                     I'm working on data science and big data \n
+  avatar           : "https://github.com/ChristNguyen/ChristNguyen.github.io/blob/master/assets/images/avata.jpg"
+  bio              : "I'm Truong, <br>
+                     I'm working on data science and big data <br>
                      Great to see you!"
     
   location         : " Ha Noi "
