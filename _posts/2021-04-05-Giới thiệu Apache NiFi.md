@@ -1,9 +1,12 @@
-﻿-- title: "**Giới thiệu Apache NiF**
 
+---
+title: "Giới thiệu Apache NiFi"
+layout: single
+excerpt: ""
 categories:
-
--   Big data
--   Data Engineering
+  -   Big data
+  -   Data Engineering
+---
 
 Với các bạn đang phải thực hiện các công việc như: crawl dữ liệu trên các website, lấy log của các hệ thống ứng dụng hay lấy dữ liệu từ server FTP, DBMS, Kafka để xử lý và đưa vào một hệ thống lưu trữ tập trung (ví dụ như HDFS), … chắc hẳn đã từng phải đối mặt với một trong số vấn đề như:
 
