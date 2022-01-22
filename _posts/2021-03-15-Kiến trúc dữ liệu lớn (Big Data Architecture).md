@@ -1,12 +1,15 @@
 
---
-title: "**Kiến trúc dữ liệu lớn (Big Data Architecture)**
-
+---
+title: "Kiến trúc dữ liệu lớn (Big Data Architecture)"
+layout: single
+excerpt: "Bài này sẽ mô tả về kiến trúc của một hệ thống Big Data"
 categories:
   - Big data
   - Data Engineering
 
 ---
+
+
 Bài này sẽ mô tả về kiến trúc của một hệ thống Big Data “đúng trong mọi trường hợp” , dành cho các bạn nào mới bắt đầu với các từ khóa Hadoop, Kafka, …. mà không biết các công nghệ này nằm ở vị trí nào trong một hệ thống Big Data tổng thể;
 
 ![](https://scontent.fhan5-8.fna.fbcdn.net/v/t1.6435-9/87382698_130387095159281_8988663030589947904_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=8ecba9&_nc_ohc=63oAV0ZOdbcAX8AyI3b&_nc_ht=scontent.fhan5-8.fna&oh=00_AT-8XfAsUPkNApJMqSt18thamj6JOAX_jIGZa3MnaoHf2w&oe=620FE3A2)
