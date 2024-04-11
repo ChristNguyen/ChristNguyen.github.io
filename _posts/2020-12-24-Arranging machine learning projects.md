@@ -1,25 +1,27 @@
 ﻿ As I said in the previous post: 
 Please remember that we prefer working in an IDE/text editor rather than jupyter notebooks. You can also work in jupyter notebooks, and it’s totally up to you. However, I will be using jupyter only for things like data exploration and for plotting charts and graphs. We will build the classification framework in such a way that most problems will become plug and play. You will be able to train a model without making too many changes to the code, and when you improve your models, you will be able to track them using git.
 Let’s look at the structure of the files first of all. For any project that you are doing, create a new folder. For this example, I am calling the project “project”. The inside of the project folder should look something like the following.
-.
+```
 ├── input
-│ ├── train.csv
-│ └── test.csv
+│   ├── train.csv
+│   └── test.csv
 ├── src
-│ ├── create_folds.py
-│ ├── train.py
-│ ├── inference.py
-│ ├── models.py
-│ ├── config.py
-│ └── model_dispatcher.py
+│   ├── create_folds.py
+│   ├── train.py
+│   ├── inference.py
+│   ├── models.py
+│   ├── config.py
+│   └── model_dispatcher.py
 ├── models
-│ ├── model_rf.bin
-│ └── model_et.bin
+│   ├── model_rf.bin
+│   └── model_et.bin
 ├── notebooks
-│ ├── exploration.ipynb
-│ └── check_data.ipynb
+│   ├── exploration.ipynb
+│   └── check_data.ipynb
 ├── README.md
 └── LICENSE
+```
+
 
 
 
