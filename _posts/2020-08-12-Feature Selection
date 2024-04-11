@@ -1,0 +1,120 @@
+
+# Feature Selection Techniques
+
+**Table of Contents**  
+1. [Introduction](#i-introduction) 
+2. [Filter-based Methods](#ii-filter-based-methods) 
+3. [Wrapper Methods](#iii-wrapper-methods) 
+4. [Ensemble (Tree-based) Methods](#iv-ensemble-tree-based-methods) 
+5. [Python Libs](#v-python-libs) 
+6. [Reference](#reference)
+
+Alongside tuning model, feature-selection is an important step in ML system development; to many features not always results in good models' performances but exhaust resources during training/testing/serving time instead. Currently our feature store contains approximately 1000 features and number of features still grows, it is a must to apply feature-selection when building a model.
+
+This page revisit some feature-selection techniques that can be applied for MSB’s usecases.
+
+### I. Introduction
+
+Feature selection methods aim to reduce the number of input variables to retain the most useful features such that the model performance does not decrease too much.
+
+![Overview of Feature Selection Techniques](https://machinelearningmastery.com/wp-content/uploads/2019/11/Overview-of-Feature-Selection-Techniques3.png)
+Overview of Feature Selection technique
+
+We can summarize feature selection as follows.
+
+-   **Feature Selection**: Select a subset of input features from the dataset.
+    
+    -   **Unsupervised**: Do not use the target variable (e.g. remove redundant variables).
+        
+        -   Correlation
+            
+    -   **Supervised**: Use the target variable (e.g. remove irrelevant variables).
+        
+        -   **Wrapper**: Search for well-performing subsets of features.
+            
+            -   RFE
+                
+        -   **Filter**: Select subsets of features based on their relationship with the target.
+            
+            -   Statistical Methods
+                
+            -   Feature Importance Methods
+                
+        -   **Intrinsic**: Algorithms that perform automatic feature selection during training.
+            
+            -   Decision Trees
+                
+-   **Dimensionality Reduction**: Project input data into a lower-dimensional feature space.
+    
+
+### II. Filter-based Methods.
+
+These methods intend to utilize statistical measures to select useful features.
+
+> The statistical measures used in filter-based feature selection are generally calculated one input variable at a time with the target variable. As such, they are referred to as univariate statistical measures. This may mean that any interaction between input variables is not considered in the filtering process.
+
+To employ statistical measures, we need to identify data types of input and output variables since each statistical test is only appropriate for certain data types.
+
+Common input variable data types:
+
+-   **Numerical Variables**
+    
+    -   Integer Variables.
+        
+    -   Floating Point Variables.
+        
+-   **Categorical Variables**.
+    
+    -   Boolean Variables (dichotomous).
+        
+    -   Ordinal Variables.
+        
+    -   Nominal Variables.
+        
+
+and output data types:
+
+-   **Numerical Output**: Regression predictive modeling problem.
+    
+-   **Categorical Output**: Classification predictive modeling problem.
+    
+
+Depends on input and output data types, we can consider a statistic test as below:
+
+
+![Choosing correct statistic test for data types](https://machinelearningmastery.com/wp-content/uploads/2019/11/How-to-Choose-Feature-Selection-Methods-For-Machine-Learning.png)
+Choosing correct statistic test for data types
+
+### III. Wrapper Methods.
+
+> Wrappers require some method to search the space of all possible subsets of features, assessing their quality by learning and evaluating a classifier with that feature subset. The feature selection process is based on a specific machine learning algorithm that we are trying to fit on a given dataset. It follows a greedy search approach by evaluating all the possible combinations of features against the evaluation criterion.
+
+A widely used methods is **recursive feature elimination (RFE)** that is already implemented inside Scikit-learn.
+
+> ‘Given an external estimator that assigns weights to features (e.g., the coefficients of a linear model), the goal of recursive feature elimination (RFE) is to select features by recursively considering smaller and smaller sets of features. First, the estimator is trained on the initial set of features and the importance of each feature is obtained either through a _coef__ attribute or through a _feature_importances__ attribute.
+> 
+> Then, the least important features are pruned from the current set of features. That procedure is recursively repeated on the pruned set until the desired number of features to select is eventually reached.
+
+### IV. Ensemble (Tree-based) Methods.
+
+These methods encompass the benefits of both the wrapper and filter methods, by including interactions of features but also maintaining reasonable computational cost. Embedded methods are iterative in the sense that takes care of each iteration of the model training process and carefully extracts those features which contribute the most to the training for a particular iteration.
+
+Two popular methods are:
+
+-   **LASSO Regularization (L1):** shrink features if their coefficients are zero
+    
+
+-   **Random Forest Importance:** choose by feature importance of Random Forest
+    
+
+### V. Python Libs:
+
+-   Sklearn feature selection: [![](https://scikit-learn.org/stable/_static/favicon.ico)API Reference](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.feature_selection)
+    
+-   mlxtend feature selection: [![](http://rasbt.github.io/mlxtend/img/favicon.ico)Mlxtend.feature selection - mlxtend](http://rasbt.github.io/mlxtend/api_subpackages/mlxtend.feature_selection/)
+    
+## Reference
+
+[1] [How to Choose a Feature Selection Method For Machine Learning - MachineLearningMastery.com](https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/)
+
+[2] [Feature Selection Techniques in Machine Learning (Updated 2024)](https://www.analyticsvidhya.com/blog/2020/10/feature-selection-techniques-in-machine-learning/)
